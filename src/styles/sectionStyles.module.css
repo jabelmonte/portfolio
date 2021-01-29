@@ -1,0 +1,21 @@
+ @font-face {
+    font-family: "NexaLight";
+    src: url('../fonts/Nexa\ Light.otf');
+ }
+
+ @font-face{
+    font-family: "NexaBold";
+    src: url('../fonts/Nexa\ Bold.otf'); 
+ }
+
+
+ .highlight{
+    font-family: "NexaBold";
+    font-weight: 24px;
+ }
+
+.highlightSubtextContent{
+    font-family: "NexaLight";
+    font-weight: 5px;
+ }
+  
