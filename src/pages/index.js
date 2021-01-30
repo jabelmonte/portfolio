@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import Intro from "../components/sections/intro"
 import SEO from "../components/seo"
 import About from '../components/sections/about'
