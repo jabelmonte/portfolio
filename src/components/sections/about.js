@@ -1,15 +1,15 @@
 import React from 'react'
 import Styled from 'styled-components'
 
-const styledAboutContainer = Styled.div`
-    background-color: #20242e
-    max-width: 500px;
+const StyledAboutContainer = Styled.section`
+    max-width: 900px;
+    background-color: var(--test-background-color);
 `
 
 function About(){
-    return <styledAboutContainer>
+    return <StyledAboutContainer>
                 <h1>About Section</h1>
-            </styledAboutContainer>
+            </StyledAboutContainer>
 }
 
 export default About
