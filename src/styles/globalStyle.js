@@ -4,12 +4,13 @@ export const GlobalStyle = createGlobalStyle`
    :root {
       --main-background-color: #20242e;
       --test-background-color: #3bad59;
-      --text-color-base: #f2f7ff;
+      --text-color-base: #e1e5f5;
+      --text-color-second-base: #72e8d8;
       --fs-xs: 12px;
       --fs-sm: 14px; 
       --fs-md: 16px;
       --fs-xl: 24px;
-      --fs-xxl: 86px;
+      --fs-xxl: 36px;
       --fs-highlight: 32px;
    }
    @font-face {
