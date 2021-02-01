@@ -33,8 +33,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <GlobalStyle />
       <ContentWrapper>
+      <GlobalStyle />
         <main>{children}</main>
       </ContentWrapper>
     </>

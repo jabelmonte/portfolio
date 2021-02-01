@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components"
+import NexaBold from '../fonts/Nexa-Bold.otf'
+import NexaLight from '../fonts/Nexa-Light.otf'
 
 export const GlobalStyle = createGlobalStyle`
    :root {
@@ -15,13 +17,14 @@ export const GlobalStyle = createGlobalStyle`
    }
    @font-face {
       font-family: 'NexaLight';
-      src: local('NexaLight'), url('../fonts/Nexa\ Light.otf') format('opentype');
+      src: url(${NexaLight}) format('opentype');
       font-style: normal;
+      font-weight: 300;
    }
 
    @font-face {
       font-family: 'NexaBold';
-      src: local('NexaLight'), url('../fonts/Nexa\ Bold.otf') format('opentype');
+      src: url(${NexaBold}) format('opentype');
       font-style: normal;
    }
    

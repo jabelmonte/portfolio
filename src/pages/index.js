@@ -1,4 +1,5 @@
 import React from "react"
+import { GlobalStyle } from '../styles/globalStyle'
 
 import Layout from "../components/layout"
 import Intro from "../components/sections/intro"
@@ -9,6 +10,7 @@ import Projects from "../components/sections/projects"
 
 const IndexPage = () => (
   <Layout>
+    <GlobalStyle />
     <SEO title="Home" />
     <Intro />
     <About />
