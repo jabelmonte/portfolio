@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
    :root {
@@ -9,16 +9,19 @@ export const GlobalStyle = createGlobalStyle`
       --fs-sm: 14px; 
       --fs-md: 16px;
       --fs-xl: 24px;
+      --fs-xxl: 86px;
       --fs-highlight: 32px;
    }
    @font-face {
-     font-family: "NexaLight";
-       src: url('../fonts/Nexa\ Light.otf');
+      font-family: 'NexaLight';
+      src: local('NexaLight'), url('../fonts/Nexa\ Light.otf') format('opentype');
+      font-style: normal;
    }
 
    @font-face {
-      font-family: "NexaBold";
-      src: url('../fonts/Nexa\ Bold.otf');
+      font-family: 'NexaBold';
+      src: local('NexaLight'), url('../fonts/Nexa\ Bold.otf') format('opentype');
+      font-style: normal;
    }
    
    html{
@@ -29,7 +32,7 @@ export const GlobalStyle = createGlobalStyle`
    }
   
    body {
-      padding: 0;
+      padding: 40;
       margin: 0;
       width: 100%;
       min-height: 100%;
@@ -37,7 +40,6 @@ export const GlobalStyle = createGlobalStyle`
       background-color: var(--main-background-color);
       color: var(--text-color-base);
       -webkit-font-smoothing: antialiased;
-      font-family: "NexaLight";
       font-size: var(--fs-md);
       line-height: 1.2;
    
@@ -50,5 +52,15 @@ export const GlobalStyle = createGlobalStyle`
       padding: 0;
       margin: 0 auto;
       max-width: 900px;
+   }
+
+   p {
+      font-size: 1.2rem;
+      font-family: 'NexaBold';
+   }
+   
+   .descriptiveText {
+      font-size: 1.2rem;
+      font-family: 'NexaLight';
    }
 `

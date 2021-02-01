@@ -4,9 +4,7 @@ import PropTypes from "prop-types"
 const Header = ({ siteTitle }) => (
   <header>
     <div>
-      <h1>
-        Header
-      </h1>
+      <h1>Header</h1>
     </div>
   </header>
 )

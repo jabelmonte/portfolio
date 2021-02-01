@@ -10,14 +10,14 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import styled from 'styled-components'
-import { GlobalStyle } from '../styles/globalStyle'
+import styled from "styled-components"
+import { GlobalStyle } from "../styles/globalStyle"
 
 const ContentWrapper = styled.div`
   display: flex;
   padding: 5px;
   flex-direction: column;
-`;
+`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <ContentWrapper>
         <main>{children}</main>
-      </ContentWrapper>  
+      </ContentWrapper>
     </>
   )
 }
