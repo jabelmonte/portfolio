@@ -8,6 +8,8 @@ export const GlobalStyle = createGlobalStyle`
       --test-background-color: #3bad59;
       --text-color-base: #e1e5f5;
       --text-color-second-base: #72e8d8;
+      --text-color-second-base-fade: #6bcfc1;
+      --color-dark: #0f3352;
       --fs-xs: 12px;
       --fs-sm: 14px; 
       --fs-md: 16px;
@@ -66,5 +68,17 @@ export const GlobalStyle = createGlobalStyle`
    .descriptiveText {
       font-size: 1.2rem;
       font-family: 'NexaLight';
+   }
+   .button {
+      padding: 5px;
+      border-radius: 5%;
+      color: var(--text-color-second-base);
+      border: 2px solid var(--text-color-second-base);
+      background-color: var(--main-background-color);
+   }
+   .button:hover,
+   .button:focus {
+      color: var(--color-dark);
+      background-color: var(--text-color-second-base-fade);
    }
 `
