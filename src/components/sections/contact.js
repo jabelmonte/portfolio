@@ -4,6 +4,7 @@ import { dummy, email } from "../links"
 
 const StyledContactContainer = styled.div`
   margin: 0 auto;
+  margin-bottom: 80px;
   max-width: 800px;
   text-align: center;
   font-family: 'NexaLight';
