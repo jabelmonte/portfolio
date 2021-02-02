@@ -11,7 +11,7 @@ import Projects from "../components/sections/projects"
 const IndexPage = () => (
   <Layout>
     <GlobalStyle />
-    <SEO title="Home" />
+    <SEO title="JAbelmonte" />
     <Intro />
     <About />
     <Contact />
