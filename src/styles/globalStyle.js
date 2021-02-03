@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components"
-import NexaBold from '../fonts/Nexa-Bold.otf'
-import NexaLight from '../fonts/Nexa-Light.otf'
+import NexaBold from "../fonts/Nexa-Bold.otf"
+import NexaLight from "../fonts/Nexa-Light.otf"
 
 export const GlobalStyle = createGlobalStyle`
    :root {
@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
       --fs-md: 16px;
       --fs-xl: 24px;
       --fs-xxl: 36px;
-      --fs-highlight: 32px;
+      --fs-highlight: 72px;
    }
    @font-face {
       font-family: 'NexaLight';
@@ -82,6 +82,19 @@ export const GlobalStyle = createGlobalStyle`
       background-color: var(--text-color-second-base-fade);
    }
    .importantText{
+      color: var(--text-color-second-base);
+   }
+
+   h2{
+      line-height: 0.1;
+      font-size: var(--fs-highlight);
+      font-family: 'NexaLight';
+      color: var(--text-color-base);
+   }
+   h3{
+      line-height: 0.1;
+      font-size: var(--fs-highlight);
+      font-family: 'NexaBold';
       color: var(--text-color-second-base);
    }
 `

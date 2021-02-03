@@ -13,28 +13,20 @@ const StyledIntroContainer = styled.section`
 const StyledIntroHeadings = styled.h1`
   margin: 0 auto;
   padding: 0;
-  line-height: 0.1;
-  font-size: var(--fs-xxl);
-  font-family: 'NexaLight';
-  color: var(--text-color-base);
 `
 const StyledIntroH2 = styled.h2`
   margin: 0 auto;
   padding: 0;
-  line-height: 0.1;
-  font-size: var(--fs-xxl);
-  font-family: 'NexaBold';
-  color: var(--text-color-second-base);
 `
 function Intro() {
   return (
     <StyledIntroContainer>
       <StyledIntroHeadings>
         <p>Hello there! I'm</p>
-        <h1>Aron!</h1> 
+        <h2>Aron!</h2> 
       </StyledIntroHeadings>
       <StyledIntroH2>
-        <h2>what am i even doing</h2>
+        <h3>what am i even doing</h3>
       </StyledIntroH2>
       <p>
         I'm a software engineer living in the
