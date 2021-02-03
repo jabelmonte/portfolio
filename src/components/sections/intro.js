@@ -5,26 +5,10 @@ const StyledIntroContainer = styled.section`
   max-width: 900px;
   margin: 0 auto;
   border-width: 0;
+  margin-top: 8em;
   margin-bottom: 4em;
   width: 100%;
   padding: 5px;
-
-  /* h1 {
-      font-size: var(--fs-xxl);
-      font-family: 'NexaLight', serif;
-      color: var(--text-color-base);
-  }
-  h2 {
-      font-size: var(--fs-xxl);
-      font-family: 'NexaLight', serif;
-      color: var(--text-color-second-base);
-  }
-  div {
-      margin: 0 auto;
-      padding: 0;
-      background-color: pink;
-      text-align: center;
-  } */
 `
 const StyledIntroHeadings = styled.h1`
   margin: 0 auto;
@@ -47,13 +31,16 @@ function Intro() {
     <StyledIntroContainer>
       <StyledIntroHeadings>
         <p>Hello there! I'm</p>
-        <h1>Aron! </h1>
+        <h1>Aron!</h1> 
       </StyledIntroHeadings>
       <StyledIntroH2>
         <h2>what am i even doing</h2>
       </StyledIntroH2>
       <p>
-        I'm a software engineer living in the city of Quezon, building amateur
+        I'm a software engineer living in the
+        <span className="importantText"> city of Quezon</span>,
+        <br></br>
+        building amateur
         stuff of things that strikes my interest.
       </p>
     </StyledIntroContainer>

@@ -81,4 +81,7 @@ export const GlobalStyle = createGlobalStyle`
       color: var(--color-dark);
       background-color: var(--text-color-second-base-fade);
    }
+   .importantText{
+      color: var(--text-color-second-base);
+   }
 `
