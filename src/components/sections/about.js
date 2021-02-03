@@ -19,11 +19,11 @@ const StyledAboutTextImage = Styled.div`
     width: 100%;
 `
 
-function About() {
+function About({about}) {
   return (
     <StyledAboutContainer>
       <StyledAboutTextBox>
-      <h1>About Me: </h1>
+      <h1 id="about">About Me: </h1>
       <p className="descriptiveText">Hello! I'm John Aron Belmonte </p>
       <br></br>
       <p className="descriptiveText">
