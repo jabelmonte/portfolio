@@ -9,9 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
 import styled from "styled-components"
 import { GlobalStyle } from "../styles/globalStyle"
+import Nav from "./nav"
 
 const ContentWrapper = styled.div`
   display: flex;
@@ -29,10 +29,10 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
+  
   return (
     <>
-      <Header />
+      <Nav />
       <ContentWrapper>
       <GlobalStyle />
         <main>{children}</main>

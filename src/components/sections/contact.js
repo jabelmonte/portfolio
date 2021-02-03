@@ -9,10 +9,10 @@ const StyledContactContainer = styled.div`
   text-align: center;
   font-family: 'NexaLight';
 `
-function Contact() {
+function Contact({contact}) {
   return (
     <StyledContactContainer>
-        <h1>Contact Section</h1>
+        <h1 id={'contact'}>Contact Section</h1>
         <a className="button" style={{ textDecoration: 'none'}} href={`mailto:${email}`}>
           Come say hi
         </a>
