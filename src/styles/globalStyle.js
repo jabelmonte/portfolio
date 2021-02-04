@@ -62,8 +62,8 @@ export const GlobalStyle = createGlobalStyle`
    }
 
    p {
-      font-size: 1.2rem;
-      font-family: 'NexaBold';
+      font-size: var(--fs-md);
+      letter-spacing: 0.01em;
    }
    
    .descriptiveText {
@@ -81,7 +81,7 @@ export const GlobalStyle = createGlobalStyle`
       font-size: var(--fs-md);
       color: var(--text-color-second-base);
       border: 3px solid var(--text-color-second-base);
-      background-color: var(--main-background-color);
+      background-color: transparent;
    }
    .button:hover {
       color: var(--text-color-base);

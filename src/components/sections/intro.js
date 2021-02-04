@@ -10,12 +10,16 @@ const StyledIntroContainer = styled.section`
   width: 100%;
   padding: 5px;
   background-color: lightpink;
+  p {
+      font-size: 1.2rem;
+      font-family: 'NexaBold';
+   }
 `
-const StyledIntroHeadings = styled.h1`
+const StyledIntroHeadings = styled.h2`
   margin: 0 auto;
   padding: 0;
 `
-const StyledIntroH2 = styled.h2`
+const StyledIntroH2 = styled.h3`
   margin: 0 auto;
   padding: 0;
 `
