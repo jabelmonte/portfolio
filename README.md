@@ -1,9 +1,14 @@
-<h1> My web portfolio <h1> powered up by **React.js** and **Gatsby**
-<br></br>
-<p>
-**plugins used are: **
-<li>gatsby-transformer-sharp</li>
-<li>gatsby-plugin-sharp</li>
-<li>gatsby-plugin-styled-components </li>
-<li>gatsby-plugin-smoothscroll</li>
-</p>
+# My Gatsby Portfolio
+powered up by [React.js]https://reactjs.org/ and [Gatsby]https://www.gatsbyjs.com/
+
+## Usage
+You can fork the repo as long as there is credit by linking it to my github!
+
+## Plugins used are:
+-gatsby-transformer-sharp
+-gatsby-plugin-sharp
+-gatsby-plugin-styled-components
+-gatsby-plugin-smoothscroll
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
