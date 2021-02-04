@@ -8,7 +8,8 @@ export const GlobalStyle = createGlobalStyle`
       --test-background-color: #3bad59;
       --text-color-base: #e1e5f5;
       --text-color-second-base: #72e8d8;
-      --text-color-second-base-fade: #6bcfc1;
+      --text-color-second-base-darker: #6db0a7;
+      --text-color-second-base-fade: #24ad9b;
       --color-dark: #0f3352;
       --fs-xs: 12px;
       --fs-sm: 14px; 
@@ -74,6 +75,7 @@ export const GlobalStyle = createGlobalStyle`
       height: 3em;
       width: 100%;
       padding: 5px;
+      outline: none;
       border-radius: 6%;
       font-family: 'NexaLight';
       font-size: var(--fs-md);
@@ -81,14 +83,16 @@ export const GlobalStyle = createGlobalStyle`
       border: 3px solid var(--text-color-second-base);
       background-color: var(--main-background-color);
    }
-   .button:hover,
-   .button:focus {
-      color: var(--color-dark);
-      background-color: var(--text-color-second-base-fade);
+   .button:hover {
+      color: var(--text-color-base);
+      border-color: var(--text-color-base);
    }
    .button:focus
    .button:after {
-      background-color: var(--main-background-color);
+      padding: none;
+      border: none;
+      background: none;
+      outline: none;
    }
    //nav bar anchor links
    .navButton {
@@ -96,13 +100,14 @@ export const GlobalStyle = createGlobalStyle`
       width: 5em;
       padding: none;
       border: none;
+      outline: none;
       background: none;
       color: var(--text-color-second-base);
       font-family: 'NexaBold';
       font-size: var(--fs-md);
    }
    .navButton:hover {
-      color: var(--color-dark);
+      color: var(--text-color-base);
    }
    .navButton:focus,
    .navButton:after {
