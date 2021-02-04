@@ -6,9 +6,10 @@ const StyledIntroContainer = styled.section`
   margin: 0 auto;
   border-width: 0;
   margin-top: 8em;
-  margin-bottom: 4em;
+  margin-bottom: 16em;
   width: 100%;
   padding: 5px;
+  background-color: lightpink;
 `
 const StyledIntroHeadings = styled.h1`
   margin: 0 auto;

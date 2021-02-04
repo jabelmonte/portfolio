@@ -2,24 +2,24 @@ import React from "react"
 import Image from "../image"
 import styled from 'styled-components'
 
-const StyledProjectContainer = styled.section`
+const StyledExperienceContainer = styled.section`
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
   border-width: 0;
   padding: 5px;
   margin-bottom: 12em;
-  background-color: olivedrab;
+  background-color: lemonchiffon;
 `
-function Projects({projects}) {
+function Experience({experience}) {
   return (
-    <StyledProjectContainer>
+    <StyledExperienceContainer>
     <div>
-      <h1 id={'projects'}>Project section</h1>
+      <h1 id={'experience'}>Experience Section</h1>
       <Image />
     </div>
-    </StyledProjectContainer>
+    </StyledExperienceContainer>
   )
 }
 
-export default Projects
+export default Experience

@@ -2,12 +2,15 @@ import React from "react"
 import styled from "styled-components"
 import { dummy, email } from "../links"
 
-const StyledContactContainer = styled.div`
+const StyledContactContainer = styled.section`
+  max-width: 900px;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 80px;
-  max-width: 800px;
+  padding: 5px;
   text-align: center;
   font-family: 'NexaLight';
+  background-color: mediumturquoise;
 `
 function Contact({contact}) {
   return (

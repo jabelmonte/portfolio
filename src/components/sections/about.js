@@ -2,11 +2,16 @@ import React from "react"
 import Styled from "styled-components"
 
 const StyledAboutContainer = Styled.section`
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    border-width: 0;
+    margin-bottom: 10em;
     display: flex;
     justify-content: center;
-    max-width: 900px;
-    padding: 50px;
+    padding: 5px;
     font-family: 'NexaLight';
+    background-color: lightsalmon;
 `
 const StyledAboutTextBox = Styled.div`
     order: 1;
@@ -23,7 +28,7 @@ function About({about}) {
   return (
     <StyledAboutContainer>
       <StyledAboutTextBox>
-      <h1 id="about">About Me: </h1>
+      <h1 id={'about'}>About Me: </h1>
       <p className="descriptiveText">Hello! I'm John Aron Belmonte </p>
       <br></br>
       <p className="descriptiveText">

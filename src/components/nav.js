@@ -7,7 +7,8 @@ const StyledHeader = styled.header`
   top: 0;
   padding: 0, 50px;
   width: 100%;
-  height: 6em;
+  height: 5em;
+  background-color: var(--main-background-color)
 `
 const StyledNav = styled.nav`
   display: flex;
@@ -48,12 +49,12 @@ function Nav() {
               </button>
             </StyledButtonDivs>
             <StyledButtonDivs>
-              <button className="navButton" onClick={() => scrollTo("#contact")}>
+              <button className="navButton" onClick={() => scrollTo("#experience")}>
                 Experiences
               </button>
             </StyledButtonDivs>
             <StyledButtonDivs>
-              <button className="navButton" onClick={() => scrollTo("#contact")}>
+              <button className="navButton" onClick={() => scrollTo("#projects")}>
                 Projects
               </button>
             </StyledButtonDivs>
