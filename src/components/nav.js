@@ -7,42 +7,33 @@ const StyledHeader = styled.header`
   top: 0;
   padding: 0, 50px;
   width: 100%;
-  height: 4em;
-  background-color: pink;
+  height: 6em;
 `
 const StyledNav = styled.nav`
-    display: flex;
+  display: flex;
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: green;
 `
-const StyledLogo = styled.div`
-    height: 100%;
-    flex-grow: 6;
-  margin-left: auto;
-  justify-content: flex-start;
-  background-color: blue;
+const StyledResume = styled.div`
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `
 const StyledLinks = styled.div`
-    height: 100%;
-    flex-grow: 4;
-  margin-right: auto;
-  justify-content: flex-end;
+  height: 100%;
+  flex-grow: 9;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  background-color: violet;
-  ul{
-      list-style-type: none;
-      margin: 0;
-      padding: 50;
-      background-color: yellow;
-
-      li{
-          margin: 0;
-          position: relative;
-          font-size: var(--fs-xl);
-      }
-  }
+  justify-content: flex-end;
+  padding-right: 6em;
+`
+const StyledButtonDivs = styled.div`
+  margin: 4em;
+  padding: 0 auto;
 `
 
 function Nav() {
@@ -50,12 +41,35 @@ function Nav() {
     <nav>
       <StyledHeader>
         <StyledNav>
-          <StyledLogo>Hello?</StyledLogo>
           <StyledLinks>
-            <li><button onClick={() => scrollTo("#about")}>About</button></li>
-            <li><button onClick={() => scrollTo("#contact")}>Job</button></li>
-            <li><button onClick={() => scrollTo("#contact")}>Contact</button></li>
+            <StyledButtonDivs>
+              <button className="navButton" onClick={() => scrollTo("#about")}>
+                About
+              </button>
+            </StyledButtonDivs>
+            <StyledButtonDivs>
+              <button className="navButton" onClick={() => scrollTo("#contact")}>
+                Experiences
+              </button>
+            </StyledButtonDivs>
+            <StyledButtonDivs>
+              <button className="navButton" onClick={() => scrollTo("#contact")}>
+                Projects
+              </button>
+            </StyledButtonDivs>
+            <StyledButtonDivs>
+              <button className="navButton" onClick={() => scrollTo("#contact")}>
+                Contact
+              </button>
+            </StyledButtonDivs>
           </StyledLinks>
+          <StyledResume>
+            <StyledButtonDivs>
+              <button className="button" onClick={() => scrollTo("#contact")}>
+                Resume
+              </button>
+            </StyledButtonDivs>
+          </StyledResume>
         </StyledNav>
       </StyledHeader>
     </nav>

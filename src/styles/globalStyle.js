@@ -69,11 +69,16 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 1.2rem;
       font-family: 'NexaLight';
    }
+   //resume and mailto buttons
    .button {
+      height: 3em;
+      width: 100%;
       padding: 5px;
-      border-radius: 5%;
+      border-radius: 6%;
+      font-family: 'NexaLight';
+      font-size: var(--fs-md);
       color: var(--text-color-second-base);
-      border: 2px solid var(--text-color-second-base);
+      border: 3px solid var(--text-color-second-base);
       background-color: var(--main-background-color);
    }
    .button:hover,
@@ -81,6 +86,32 @@ export const GlobalStyle = createGlobalStyle`
       color: var(--color-dark);
       background-color: var(--text-color-second-base-fade);
    }
+   .button:focus
+   .button:after {
+      background-color: var(--main-background-color);
+   }
+   //nav bar anchor links
+   .navButton {
+      height: 3em;
+      width: 5em;
+      padding: none;
+      border: none;
+      background: none;
+      color: var(--text-color-second-base);
+      font-family: 'NexaBold';
+      font-size: var(--fs-md);
+   }
+   .navButton:hover {
+      color: var(--color-dark);
+   }
+   .navButton:focus,
+   .navButton:after {
+      padding: none;
+      border: none;
+      background: none;
+      outline: none;
+   }
+
    .importantText{
       color: var(--text-color-second-base);
    }
