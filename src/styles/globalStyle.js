@@ -90,6 +90,7 @@ export const GlobalStyle = createGlobalStyle`
       color: var(--text-color-second-base);
       border: 3px solid var(--text-color-second-base);
       background-color: transparent;
+      text-decoration: none;
    }
    .button:hover {
       color: var(--text-color-base);

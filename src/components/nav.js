@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import scrollTo from "gatsby-plugin-smoothscroll"
+import pdf from '../images/media/CV_John_Aron_Belmonte.pdf'
 
 const StyledHeader = styled.header`
   position: fixed;
@@ -75,9 +76,9 @@ function Nav() {
           </StyledLinks>
           <StyledResume>
             <StyledButtonDivs>
-              <button className="button" onClick={() => scrollTo("#contact")}>
+              <a className="button" href={pdf} target='_blank' rel='noopener noreferrer'>
                 Resume
-              </button>
+              </a>
             </StyledButtonDivs>
           </StyledResume>
         </StyledNav>
