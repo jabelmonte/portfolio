@@ -32,10 +32,6 @@ const Line = styled.h1`
     line-height: 0.01px;
     margin: 10px 0 20px;
   }
-  h1 span{
-    background-color: var(--main-background-color);
-    padding: 0 10px;
-  }
 `
 function Contact({contact}) {
   return (

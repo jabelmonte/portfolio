@@ -5,6 +5,7 @@ import NexaLight from "../fonts/Nexa-Light.otf"
 export const GlobalStyle = createGlobalStyle`
    :root {
       --main-background-color: #20242e;
+      --main-background-color-brighter: #22293b;
       --test-background-color: #3bad59;
       --text-color-base: #e1e5f5;
       --text-color-second-base: #72e8d8;
@@ -62,10 +63,17 @@ export const GlobalStyle = createGlobalStyle`
    }
 
    p {
+      font-style: 'NexaLight';
       font-size: var(--fs-md);
+      font-weight: 300;
       letter-spacing: 0.01em;
    }
    
+   h1, h2, h3, h4, h5, h6 {
+      font-style: 'NexaBold';
+      color: var(--text-color-base);
+   }
+
    .descriptiveText {
       font-size: 1.2rem;
       font-family: 'NexaLight';
@@ -123,20 +131,32 @@ export const GlobalStyle = createGlobalStyle`
       top: -150px;
       visibility: hidden;  
    }
-   .importantText{
+   .importantText {
       color: var(--text-color-second-base);
    }
 
-   h2{
+   h1 span {
+    background-color: var(--main-background-color);
+    padding: 0 10px;
+   }
+
+   h2 {
       line-height: 0.1;
       font-size: var(--fs-highlight);
       font-family: 'NexaLight';
       color: var(--text-color-base);
    }
-   h3{
+   h3 {
       line-height: 0.1;
       font-size: var(--fs-highlight);
       font-family: 'NexaBold';
       color: var(--text-color-second-base);
+   }
+
+   .projectThumbnail {
+      display: block;
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
    }
 `
