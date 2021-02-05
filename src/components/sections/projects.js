@@ -10,7 +10,7 @@ const StyledProjectContainer = styled.section`
   margin: 0 auto;
   border-width: 0;
   padding: 5px;
-  margin-bottom: 28em;
+  margin-bottom: 18em;
   font-family: 'NexaLight';
 `
 const ProjectWrapper = styled.div`
@@ -43,7 +43,7 @@ function Projects({projects}) {
   return (
     <StyledProjectContainer>
       <h1 className="anchor" id={'projects'}></h1>
-    <Line><h1><span>Projects</span></h1></Line>
+    <Line><h1><span>Stuff I built</span></h1></Line>
     <ProjectWrapper>
       <ProjectCapsule>
         <img class="projectThumbnail" src={Boop}></img>

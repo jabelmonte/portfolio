@@ -7,11 +7,9 @@ const StyledAboutContainer = Styled.section`
     margin: 0 auto;
     border-width: 0;
     margin-bottom: 10em;
-    display: flex;
     justify-content: center;
     padding: 5px;
     font-family: 'NexaLight';
-    background-color: lightsalmon;
 `
 const StyledAboutTextBox = Styled.div`
     order: 1;
@@ -23,10 +21,19 @@ const StyledAboutTextImage = Styled.div`
     max-width: 50%;
     width: 100%;
 `
-
+const Line = Styled.h1`
+  h1{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--text-color-base);
+    line-height: 0.01px;
+    margin: 10px 0 20px;
+  }
+`
 function About({about}) {
   return (
     <StyledAboutContainer>
+      <Line><h1><span>Nice to meet you</span></h1></Line>
       <StyledAboutTextBox>
       <h1 className="anchor" id={'about'}></h1>
       <h1>About Me: </h1>

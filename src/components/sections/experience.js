@@ -1,5 +1,4 @@
 import React from "react"
-import Image from "../image"
 import styled from 'styled-components'
 
 const StyledExperienceContainer = styled.section`
@@ -9,15 +8,25 @@ const StyledExperienceContainer = styled.section`
   border-width: 0;
   padding: 5px;
   margin-bottom: 12em;
-  background-color: lemonchiffon;
+  font-family: 'NexaLight';
 `
+const Line = styled.h1`
+  h1{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--text-color-base);
+    line-height: 0.01px;
+    margin: 10px 0 20px;
+  }
+`
+
 function Experience({experience}) {
   return (
     <StyledExperienceContainer>
       <h1 className="anchor" id={'experience'}></h1>
+      <Line><h1><span>My journey so far</span></h1></Line>
     <div>
       <h1>Experience Section</h1>
-      <Image />
     </div>
     </StyledExperienceContainer>
   )

@@ -9,7 +9,6 @@ const StyledIntroContainer = styled.section`
   margin-bottom: 16em;
   width: 100%;
   padding: 5px;
-  background-color: lightpink;
   p {
       font-size: 1.2rem;
       font-family: 'NexaBold';
