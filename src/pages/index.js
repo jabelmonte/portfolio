@@ -12,7 +12,7 @@ import Contact from "../components/sections/contact"
 const IndexPage = () => (
   <Layout>
     <GlobalStyle />
-    <SEO title="JAbelmonte" />
+    <SEO title="John Aron Belmonte | Welcome!" />
     <Intro />
     <About />
     <Experience />
