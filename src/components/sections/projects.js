@@ -14,6 +14,7 @@ const StyledProjectContainer = styled.section`
 function Projects({projects}) {
   return (
     <StyledProjectContainer>
+      <h1 className="anchor" id={'projects'}></h1>
     <div>
       <h1 id={'projects'}>Project section</h1>
       <Image />

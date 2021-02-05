@@ -116,7 +116,13 @@ export const GlobalStyle = createGlobalStyle`
       background: none;
       outline: none;
    }
-
+   .anchor,
+   .anchor:before {
+      display: block;
+      position: relative;
+      top: -150px;
+      visibility: hidden;  
+   }
    .importantText{
       color: var(--text-color-second-base);
    }

@@ -14,8 +14,9 @@ const StyledExperienceContainer = styled.section`
 function Experience({experience}) {
   return (
     <StyledExperienceContainer>
+      <h1 className="anchor" id={'experience'}></h1>
     <div>
-      <h1 id={'experience'}>Experience Section</h1>
+      <h1>Experience Section</h1>
       <Image />
     </div>
     </StyledExperienceContainer>

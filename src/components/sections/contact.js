@@ -40,7 +40,8 @@ const Line = styled.h1`
 function Contact({contact}) {
   return (
     <StyledContactContainer>
-        <Line><h1 id={'contact'}><span>Hit me up!</span></h1></Line>
+        <h1 className="anchor" id={'contact'}></h1>
+        <Line><h1><span>Hit me up!</span></h1></Line>
         <StyledContactText>
           <p>I'm currently 
             <span className="importantText"> open for work! </span>
