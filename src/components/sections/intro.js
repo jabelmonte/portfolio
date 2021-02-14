@@ -5,7 +5,7 @@ const StyledIntroContainer = styled.section`
   max-width: 900px;
   margin: 0 auto;
   border-width: 0;
-  margin-top: 8em;
+  margin-top: 14em;
   margin-bottom: 16em;
   width: 100%;
   padding: 5px;
@@ -26,18 +26,17 @@ function Intro() {
   return (
     <StyledIntroContainer>
       <StyledIntroHeadings>
-        <p>Hello there! I'm</p>
-        <h2>Aron!</h2> 
+        <p>Hi i'm</p>
+        <h2>JOHN ARON</h2> 
       </StyledIntroHeadings>
       <StyledIntroH2>
-        <h3>what am i even doing</h3>
+        <h3>I build things of interest</h3>
       </StyledIntroH2>
       <p>
         I'm a software engineer living in the
         <span className="importantText"> city of Quezon</span>,
         <br></br>
-        building amateur
-        stuff of things that strikes my interest.
+        I continue learning technologies that could benefit with the internet
       </p>
     </StyledIntroContainer>
   )

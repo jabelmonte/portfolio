@@ -14,6 +14,7 @@ const StyledAboutContainer = Styled.section`
 const StyledAboutTextBox = Styled.div`
     order: 1;
     max-width: 50%;
+    padding: 10px;
 `
 
 const StyledAboutTextImage = Styled.div`
@@ -36,20 +37,15 @@ function About({about}) {
       <Line><h1><span>Nice to meet you</span></h1></Line>
       <StyledAboutTextBox>
       <h1 className="anchor" id={'about'}></h1>
-      <h1>About Me: </h1>
-      <p className="descriptiveText">Hello! I'm John Aron Belmonte </p>
-      <br></br>
       <p className="descriptiveText">
         I'm currently looking for a job here in the city, whether it be on the
         web or the funky enterprise, I'll check any opportunity that comes by.
       </p>
       <br></br>
       <p className="descriptiveText">
-        I have started expanding my knowledge on the web as it really piques my
-        interests.
+        I have started expanding my knowledge concerning the web.
       </p>
       </StyledAboutTextBox>
-      <StyledAboutTextImage>asdasd</StyledAboutTextImage>
     </StyledAboutContainer>
   )
 }
