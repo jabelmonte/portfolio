@@ -1,12 +1,12 @@
 import React from "react"
 import styled from "styled-components"
 import scrollTo from "gatsby-plugin-smoothscroll"
+import hamburger from '../images/icons/hamburger.svg'
 import pdf from '../images/media/CV_John_Aron_Belmonte.pdf'
 
 function Nav() {
   return (
     <nav>
-      <StyledHeader>
         <StyledNav>
           <StyledLinks>
             <StyledButtonDivs>
@@ -46,26 +46,42 @@ function Nav() {
               </a>
             </StyledButtonDivs>
           </StyledResume>
+          <StyledMenu>
+            
+          </StyledMenu>
         </StyledNav>
-      </StyledHeader>
     </nav>
   )
 }
 
-const StyledHeader = styled.header`
+const StyledNav = styled.nav`
   position: fixed;
   top: 0;
+  display: flex;
   padding: 0, 50px;
   width: 100%;
   height: 5em;
   background-color: var(--main-background-color);
+
+  @media screen and (max-width: 780px) {
+    .StyledLinks.responsive {
+      display: none;
+    }
+    .StyledResume {
+      float: right;
+    }
+  }
 `
-const StyledNav = styled.nav`
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 100%;
+const StyledMenu = styled.nav`
+  display: none;
+  color: #fff;
 `
+// const StyledNav = styled.nav`
+//   display: flex;
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+// `
 const StyledResume = styled.div`
   height: 100%;
   flex-grow: 1;
