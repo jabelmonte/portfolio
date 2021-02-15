@@ -13,12 +13,6 @@ import styled from "styled-components"
 import { GlobalStyle } from "../styles/globalStyle"
 import Nav from "./nav"
 
-const ContentWrapper = styled.div`
-  display: flex;
-  padding: 5px;
-  flex-direction: column;
-`
-
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -44,5 +38,11 @@ const Layout = ({ children }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
+
+const ContentWrapper = styled.div`
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+`
 
 export default Layout

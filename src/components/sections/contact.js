@@ -2,6 +2,24 @@ import React from "react"
 import styled from "styled-components"
 import { dummy, email } from "../links"
 
+function Contact({contact}) {
+  return (
+    <StyledContactContainer>
+        <h1 className="anchor" id={'contact'}></h1>
+        <Line><h1><span>Hit me up!</span></h1></Line>
+        <StyledContactText>
+          <p>I'm currently 
+            <span className="importantText"> open for work! </span>
+            If you want to get in touch, or just want to say hi, feel free to reach out!
+          </p>
+        </StyledContactText>
+        <a className="button" style={{ textDecoration: 'none'}} href={`mailto:${email}`}>
+          Come say hi
+        </a>
+    </StyledContactContainer>
+  )
+}
+
 const StyledContactContainer = styled.section`
   max-width: 900px;
   height: 420px;
@@ -33,22 +51,5 @@ const Line = styled.h1`
     margin: 10px 0 20px;
   }
 `
-function Contact({contact}) {
-  return (
-    <StyledContactContainer>
-        <h1 className="anchor" id={'contact'}></h1>
-        <Line><h1><span>Hit me up!</span></h1></Line>
-        <StyledContactText>
-          <p>I'm currently 
-            <span className="importantText"> open for work! </span>
-            If you want to get in touch, or just want to say hi, feel free to reach out!
-          </p>
-        </StyledContactText>
-        <a className="button" style={{ textDecoration: 'none'}} href={`mailto:${email}`}>
-          Come say hi
-        </a>
-    </StyledContactContainer>
-  )
-}
 
 export default Contact

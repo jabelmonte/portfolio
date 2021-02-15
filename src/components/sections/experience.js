@@ -1,6 +1,18 @@
 import React from "react"
 import styled from 'styled-components'
 
+function Experience({experience}) {
+  return (
+    <StyledExperienceContainer>
+      <h1 className="anchor" id={'experience'}></h1>
+      <Line><h1><span>My journey so far</span></h1></Line>
+    <div>
+      <h1>Experience Section</h1>
+    </div>
+    </StyledExperienceContainer>
+  )
+}
+
 const StyledExperienceContainer = styled.section`
   max-width: 900px;
   width: 100%;
@@ -19,17 +31,5 @@ const Line = styled.h1`
     margin: 10px 0 20px;
   }
 `
-
-function Experience({experience}) {
-  return (
-    <StyledExperienceContainer>
-      <h1 className="anchor" id={'experience'}></h1>
-      <Line><h1><span>My journey so far</span></h1></Line>
-    <div>
-      <h1>Experience Section</h1>
-    </div>
-    </StyledExperienceContainer>
-  )
-}
 
 export default Experience

@@ -1,6 +1,25 @@
 import React from "react"
 import Styled from "styled-components"
 
+function About({about}) {
+  return (
+    <StyledAboutContainer>
+      <Line><h1><span>Nice to meet you</span></h1></Line>
+      <StyledAboutTextBox>
+      <h1 className="anchor" id={'about'}></h1>
+      <p className="descriptiveText">
+        I'm currently looking for a job here in the city, whether it be on the
+        web or the funky enterprise, I'll check any opportunity that comes by.
+      </p>
+      <br></br>
+      <p className="descriptiveText">
+        I have started expanding my knowledge concerning the web.
+      </p>
+      </StyledAboutTextBox>
+    </StyledAboutContainer>
+  )
+}
+
 const StyledAboutContainer = Styled.section`
     max-width: 900px;
     width: 100%;
@@ -31,23 +50,5 @@ const Line = Styled.h1`
     margin: 10px 0 20px;
   }
 `
-function About({about}) {
-  return (
-    <StyledAboutContainer>
-      <Line><h1><span>Nice to meet you</span></h1></Line>
-      <StyledAboutTextBox>
-      <h1 className="anchor" id={'about'}></h1>
-      <p className="descriptiveText">
-        I'm currently looking for a job here in the city, whether it be on the
-        web or the funky enterprise, I'll check any opportunity that comes by.
-      </p>
-      <br></br>
-      <p className="descriptiveText">
-        I have started expanding my knowledge concerning the web.
-      </p>
-      </StyledAboutTextBox>
-    </StyledAboutContainer>
-  )
-}
 
 export default About

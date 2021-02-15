@@ -3,6 +3,33 @@ import Image from "../image"
 import styled from 'styled-components'
 import Boop from '../../images/media/boop.png'
 
+function Projects({projects}) {
+  return (
+    <StyledProjectContainer>
+      <h1 className="anchor" id={'projects'}></h1>
+    <Line><h1><span>Stuff I built</span></h1></Line>
+    <ProjectWrapper>
+      <ProjectCapsule>
+        <img class="projectThumbnail" src={Boop}></img>
+        <ProjectInfoWrapper>
+          <h4 className="importantText">Chuguagag</h4>
+          <p>weo weo pew pew pew pew</p>
+        </ProjectInfoWrapper>
+      </ProjectCapsule>
+
+      <ProjectCapsule>
+        <img class="projectThumbnail" src={Boop}></img>
+        <ProjectInfoWrapper>
+          <h4 className="importantText">Some stuff</h4>
+          <p>blah blahasdasdsadadasdsadsa</p>
+        </ProjectInfoWrapper>
+      </ProjectCapsule>
+    </ProjectWrapper>
+    
+    </StyledProjectContainer>
+  )
+}
+
 const StyledProjectContainer = styled.section`
   overflow: auto;
   max-width: 900px;
@@ -38,32 +65,5 @@ const Line = styled.h1`
     margin: 10px 0 20px;
   }
 `
-
-function Projects({projects}) {
-  return (
-    <StyledProjectContainer>
-      <h1 className="anchor" id={'projects'}></h1>
-    <Line><h1><span>Stuff I built</span></h1></Line>
-    <ProjectWrapper>
-      <ProjectCapsule>
-        <img class="projectThumbnail" src={Boop}></img>
-        <ProjectInfoWrapper>
-          <h4 className="importantText">Chuguagag</h4>
-          <p>weo weo pew pew pew pew</p>
-        </ProjectInfoWrapper>
-      </ProjectCapsule>
-
-      <ProjectCapsule>
-        <img class="projectThumbnail" src={Boop}></img>
-        <ProjectInfoWrapper>
-          <h4 className="importantText">Some stuff</h4>
-          <p>blah blahasdasdsadadasdsadsa</p>
-        </ProjectInfoWrapper>
-      </ProjectCapsule>
-    </ProjectWrapper>
-    
-    </StyledProjectContainer>
-  )
-}
 
 export default Projects
