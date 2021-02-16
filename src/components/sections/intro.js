@@ -23,6 +23,7 @@ function Intro() {
 
 const StyledIntroContainer = styled.section`
   max-width: 900px;
+  height: 80%vh;
   margin: 0 auto;
   border-width: 0;
   margin-top: 14em;
@@ -33,14 +34,42 @@ const StyledIntroContainer = styled.section`
       font-size: 1.2rem;
       font-family: 'NexaBold';
    }
+   @media (max-width: 1080px) {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     padding: 2px;
+    h3 {
+      font-size: 3rem;
+    }
+
+   }
+   @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    h3 {
+      font-size: 2rem;
+    }
+   }
 `
-const StyledIntroHeadings = styled.h2`
+const StyledIntroHeadings = styled.div`
   margin: 0 auto;
   padding: 0;
 `
-const StyledIntroH2 = styled.h3`
+const StyledIntroH2 = styled.div`
   margin: 0 auto;
   padding: 0;
+  font-size: 1px;
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 5px;
+  }
 `
 
 export default Intro
