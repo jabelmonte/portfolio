@@ -1,10 +1,11 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import hamburger from '../images/icons/hamburger.svg'
 import pdf from '../images/media/CV_John_Aron_Belmonte.pdf'
 
 function Nav() {
+  const [nav, showNav] = useState(false)
   return (
     <nav>
         <StyledNav>
@@ -46,9 +47,35 @@ function Nav() {
               </a>
             </StyledButtonDivs>
           </StyledResume>
-          <StyledMenu>
-            
+          <StyledMenu nav={nav} onClick={() => showNav(!nav)}>
+            <div />
+            <div />
+            <div />
           </StyledMenu>
+          <MenuLinks nav={nav}>
+            <ul>
+              <li>
+                <button className="navButton" onClick={() => scrollTo("#about")}>
+                  About
+                </button>
+              </li>
+              <li>
+                <button className="navButton" onClick={() => scrollTo("#contact")}>
+                  Contact
+                </button>
+              </li>
+              <li>
+                <button className="navButton" onClick={() => scrollTo("#experience")}>
+                    Experiences
+                </button>
+              </li>
+              <li>
+                <button className="navButton" onClick={() => scrollTo("#contact")}>
+                  Contact
+                </button>
+              </li>
+            </ul>
+          </MenuLinks>
         </StyledNav>
     </nav>
   )
@@ -63,18 +90,71 @@ const StyledNav = styled.nav`
   height: 5em;
   background-color: var(--main-background-color);
 
-  @media screen and (max-width: 780px) {
+  /* @media screen and (max-width: 780px) {
     .StyledLinks.responsive {
       display: none;
     }
     .StyledResume {
       float: right;
     }
+  } */
+`
+const StyledMenu = styled.button`
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+  outline: none;
+
+  div {
+    width: 1.5rem;
+    height: 0.2rem;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: 1px;
+    position: relative;
+    transition: opacity 300ms, transform 300ms;
+
+    :first-child {
+      transform: ${({ nav }) => (nav ? "rotate(41deg)" : "rotate(0)")};
+    }
+    :nth-child(2) {
+      opacity: ${({ nav }) => (nav ? "0" : "1")};
+    }
+    :nth-child(3) {
+      transform: ${({ nav }) => (nav ? "rotate(-41deg)" : "rotate(0)")};
+    }
   }
 `
-const StyledMenu = styled.nav`
-  display: none;
-  color: #fff;
+const MenuLinks = styled.nav`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 50%;
+  background: var(--main-background-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 300ms;
+  transform: ${({nav}) => (nav ? "translateX(0)" : "translateX(100%)")};
+
+  ul {
+    list-style-type: none;
+  }
+  button:hover {
+    color: var(--color-dark);
+  }
 `
 // const StyledNav = styled.nav`
 //   display: flex;
