@@ -40,7 +40,7 @@ export const GlobalStyle = createGlobalStyle`
    }
   
    body {
-      padding: 40;
+      padding: 0;
       margin: 0;
       width: 100%;
       min-height: 100%;
