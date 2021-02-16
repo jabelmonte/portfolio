@@ -135,7 +135,7 @@ const StyledMenu = styled.button`
     outline: none;
 
     div {
-      width: 1.5rem;
+      width: 1.8rem;
       height: 0.2rem;
       background: #fff;
       border-radius: 5px;
@@ -144,13 +144,13 @@ const StyledMenu = styled.button`
       transition: opacity 300ms, transform 300ms;
 
       :first-child {
-        transform: ${({ nav }) => (nav ? "rotate(41deg)" : "rotate(0)")};
+        transform: ${({ nav }) => (nav ? "rotate(35deg)" : "rotate(0)")};
       }
       :nth-child(2) {
         opacity: ${({ nav }) => (nav ? "0" : "1")};
       }
       :nth-child(3) {
-        transform: ${({ nav }) => (nav ? "rotate(-41deg)" : "rotate(0)")};
+        transform: ${({ nav }) => (nav ? "rotate(-35deg)" : "rotate(0)")};
       }
     }
   }
