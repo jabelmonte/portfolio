@@ -45,6 +45,7 @@ const IntroContainer = styled.section`
      text-align: center;
      padding: 2px;
 
+
      h2 {
        font-size: 3em;
      }
@@ -59,10 +60,32 @@ const IntroContainer = styled.section`
     justify-content: center;
     text-align: center;
     h2 {
-       font-size: 2.5em;
+       font-size: 2em;
      }
     h3 {
       font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+   }
+
+   @media (max-width: 568px) {
+    display: grid;
+    grid-grid-template-columns: repeat(auto-fit, max-width);
+    gap: 20px;
+    margin-top: 10em;
+    justify-content: center;
+    text-align: center;
+    h2 {
+       font-size: 1.5em;
+     }
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      padding: 15px;
+      font-size: 0.8rem;
     }
    }
 `
