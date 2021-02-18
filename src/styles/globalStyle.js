@@ -37,6 +37,8 @@ export const GlobalStyle = createGlobalStyle`
       margin: 0;
       box-sizing: border-box;
       width: 100%;
+      height: 100%;
+      overflow-x: hidden;
    }
   
    body {
