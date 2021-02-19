@@ -7,7 +7,7 @@ function Experience({experience}) {
       <h1 className="anchor" id={'experience'}>.</h1>
       <Line><h1><span>My journey so far</span></h1></Line>
     <div>
-      <h1>.</h1>
+      <h1>:'^) this is so sad</h1>
     </div>
     </StyledExperienceContainer>
   )

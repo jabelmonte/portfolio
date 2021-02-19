@@ -61,13 +61,13 @@ function Nav() {
                 </button>
               </li>
               <li>
-                <button className="navButton" onClick={() => scrollTo("#contact")}>
-                  Contact
+                <button className="navButton" onClick={() => scrollTo("#experience")}>
+                    Experiences
                 </button>
               </li>
               <li>
-                <button className="navButton" onClick={() => scrollTo("#experience")}>
-                    Experiences
+                <button className="navButton" onClick={() => scrollTo("#projects")}>
+                  Projects
                 </button>
               </li>
               <li>
