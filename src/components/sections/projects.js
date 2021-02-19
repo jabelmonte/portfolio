@@ -79,7 +79,7 @@ const ProjectCard = styled.div`
   border: 3px solid var(--text-color-second-base);
   border-radius: 2px;
   line-height: 0;
-  height: 400px;
+  max-height: 100%;
   background-color: green;
 `
 const ProjectImage = styled.img`
