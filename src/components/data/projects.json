@@ -1,0 +1,14 @@
+[
+    {
+        "img": "../../images/media/boop.png",
+        "alt": "boop.png",
+        "projectName": "boopers project",
+        "projectDescription": "This is booper's description"
+    },
+    {
+        "img": "../../images/media/boop2.png",
+        "alt": "boop_2.png",
+        "projectName": "boopers second project",
+        "projectDescription": "This is the second booper's description"
+    }
+]

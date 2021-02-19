@@ -4,11 +4,11 @@ import NexaLight from "../fonts/Nexa-Light.otf"
 
 export const GlobalStyle = createGlobalStyle`
    :root {
-      --main-background-color: #20242e;
+      --main-background-color: #253b6e;
       --main-background-color-brighter: #22293b;
       --test-background-color: #3bad59;
-      --text-color-base: #e1e5f5;
-      --text-color-second-base: #72e8d8;
+      --text-color-base: #d2ecf9;
+      --text-color-second-base: #1891ac;
       --text-color-second-base-darker: #6db0a7;
       --text-color-second-base-fade: #24ad9b;
       --color-dark: #0f3352;
@@ -70,7 +70,9 @@ export const GlobalStyle = createGlobalStyle`
       font-weight: 300;
       letter-spacing: 0.01em;
    }
-   
+   #footer p{
+      margin-bottom: 0;
+   }
    h1, h2, h3, h4, h5, h6 {
       font-style: 'NexaBold';
       color: var(--text-color-base);
@@ -89,7 +91,7 @@ export const GlobalStyle = createGlobalStyle`
       border-radius: 6%;
       font-family: 'NexaLight';
       font-size: var(--fs-md);
-      color: var(--text-color-second-base);
+      color: var(--text-color-base);
       border: 3px solid var(--text-color-second-base);
       background-color: transparent;
       text-decoration: none;
@@ -113,12 +115,12 @@ export const GlobalStyle = createGlobalStyle`
       border: none;
       outline: none;
       background: none;
-      color: var(--text-color-second-base);
+      color: var(--text-color-base);
       font-family: 'NexaBold';
       font-size: var(--fs-md);
    }
    .navButton:hover {
-      color: var(--text-color-base);
+      color: var(--text-color-second-base);
    }
    .navButton:focus,
    .navButton:after {
