@@ -8,12 +8,11 @@ function About({about}) {
       <Line><h1><span>Nice to meet you</span></h1></Line>
       <StyledAboutTextBox>
       <p className="descriptiveText">
-        I'm currently looking for a job here in the city, whether it be on the
-        web or the funky enterprise, I'll check any opportunity that comes by.
+        This website of mine is still an ongoing project.
       </p>
       <br></br>
       <p className="descriptiveText">
-        I have started expanding my knowledge concerning the web.
+        Thanks for being interested.
       </p>
       </StyledAboutTextBox>
     </StyledAboutContainer>

@@ -76,7 +76,7 @@ const ProjectWrapper = styled.div`
   margin: 0;
 `
 const ProjectCard = styled.div`
-  border: 3px solid var(--text-color-second-base);
+  border: 3px solid var(--bg-color-tertiary);
   border-radius: 2px;
   line-height: 0;
   max-height: 100%;
@@ -96,7 +96,7 @@ const ProjectImage = styled.img`
   }
 `
 const ProjectInfoWrapper = styled.div`
-  background-color: var(--main-background-color-brighter);
+  background-color: var(--bg-color-primary);
   padding: 10px;
   margin: 0;
   max-width: 100%;

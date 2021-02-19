@@ -46,7 +46,7 @@ const Line = styled.h1`
   h1{
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid var(--text-color-base);
+    border-bottom: 1px solid var(--text-color-primary);
     line-height: 0.01px;
     margin: 10px 0 20px;
   }

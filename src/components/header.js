@@ -25,7 +25,7 @@ const StyledHeader = styled.header`
   width: 100%;
   top: 0;
   padding: 0, 20px;
-  background-color: var(--text-color-second-base);
+  background-color: var(--text-color-tertiary);
 `
 
 const StyledHeaderLinks = styled.div`

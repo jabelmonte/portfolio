@@ -114,7 +114,7 @@ const StyledNav = styled.nav`
   padding: 0, 50px;
   width: 100%;
   height: 5em;
-  background-color: var(--main-background-color);
+  background-color: var(--bg-color-secondary);
   z-index: 1;
 `
 const StyledMenu = styled.button`
@@ -167,7 +167,7 @@ const MenuLinks = styled.nav`
     text-align: center;
     height: 100vh;
     width: 100%;
-    background: var(--main-background-color);
+    background: var(--bg-color-secondary);
     position: absolute;
     top: 0;
     right: 0;
@@ -178,7 +178,7 @@ const MenuLinks = styled.nav`
       list-style-type: none;
     }
     button:hover {
-      color: var(--color-dark);
+      color: var(--text-color-tertiary);
     }
   }
 `

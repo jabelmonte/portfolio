@@ -4,14 +4,12 @@ import NexaLight from "../fonts/Nexa-Light.otf"
 
 export const GlobalStyle = createGlobalStyle`
    :root {
-      --main-background-color: #253b6e;
-      --main-background-color-brighter: #22293b;
-      --test-background-color: #3bad59;
-      --text-color-base: #d2ecf9;
-      --text-color-second-base: #1891ac;
-      --text-color-second-base-darker: #6db0a7;
-      --text-color-second-base-fade: #24ad9b;
-      --color-dark: #0f3352;
+      --bg-color-primary: #022449;
+      --bg-color-secondary: #55bdca;
+      --bg-color-tertiary: #96ffff;
+      --text-color-primary: #c8eff4;
+      --text-color-secondary: #f27d42;
+      --text-color-tertiary: #f27d42;
       --fs-xs: 12px;
       --fs-sm: 14px; 
       --fs-md: 16px;
@@ -47,8 +45,8 @@ export const GlobalStyle = createGlobalStyle`
       width: 100%;
       min-height: 100%;
       overflow-x: hidden;
-      background-color: var(--main-background-color);
-      color: var(--text-color-base);
+      background-color: var(--bg-color-primary);
+      color: var(--text-color-primary);
       -webkit-font-smoothing: antialiased;
       font-size: var(--fs-md);
       line-height: 1.2;
@@ -75,7 +73,7 @@ export const GlobalStyle = createGlobalStyle`
    }
    h1, h2, h3, h4, h5, h6 {
       font-style: 'NexaBold';
-      color: var(--text-color-base);
+      color: var(--text-color-primary);
    }
 
    .descriptiveText {
@@ -91,14 +89,17 @@ export const GlobalStyle = createGlobalStyle`
       border-radius: 6%;
       font-family: 'NexaLight';
       font-size: var(--fs-md);
-      color: var(--text-color-base);
-      border: 3px solid var(--text-color-second-base);
-      background-color: transparent;
+      font-weight: 700;
+      color: var(--text-color-primary);
+      border: 3px solid transparent;
+      /* background-color: transparent; */
+      background-color: var(--text-color-tertiary);
       text-decoration: none;
    }
    .button:hover {
-      color: var(--text-color-base);
-      border-color: var(--text-color-base);
+      color: var(--text-color-primary);
+      border-color: var(--bg-color-primary);
+      border-radius: 6%;
    }
    .button:focus
    .button:after {
@@ -115,12 +116,12 @@ export const GlobalStyle = createGlobalStyle`
       border: none;
       outline: none;
       background: none;
-      color: var(--text-color-base);
+      color: var(--bg-color-primary);
       font-family: 'NexaBold';
       font-size: var(--fs-md);
    }
    .navButton:hover {
-      color: var(--text-color-second-base);
+      color: var(--bg-color-tertiary);
    }
    .navButton:focus,
    .navButton:after {
@@ -137,11 +138,12 @@ export const GlobalStyle = createGlobalStyle`
       visibility: hidden;  
    }
    .importantText {
-      color: var(--text-color-second-base);
+      color: var(--text-color-secondary);
+      font-weight: 700;
    }
 
    h1 span {
-    background-color: var(--main-background-color);
+    background-color: var(--bg-color-primary);
     padding: 0 10px;
    }
 
@@ -149,13 +151,13 @@ export const GlobalStyle = createGlobalStyle`
       line-height: 0.1;
       font-size: var(--fs-highlight);
       font-family: 'NexaLight';
-      color: var(--text-color-base);
+      color: var(--text-color-primary);
    }
    h3 {
       line-height: 0.1;
       font-size: var(--fs-highlight);
       font-family: 'NexaBold';
-      color: var(--text-color-second-base);
+      color: var(--text-color-secondary);
    }
 
    .projectThumbnail {

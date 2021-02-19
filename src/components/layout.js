@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import { GlobalStyle } from "../styles/globalStyle"
 import Nav from "./nav"
+import Footer from './footer'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,6 +31,7 @@ const Layout = ({ children }) => {
       <ContentWrapper>
       <GlobalStyle />
         <main>{children}</main>
+        <Footer />
       </ContentWrapper>
     </>
   )
@@ -41,7 +43,8 @@ Layout.propTypes = {
 
 const ContentWrapper = styled.div`
   display: flex;
-  padding: 5px;
+  padding: 0;
+  margin: 0;
   flex-direction: column;
 `
 

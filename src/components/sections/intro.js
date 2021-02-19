@@ -22,27 +22,35 @@ function Intro() {
 }
 
 const IntroContainer = styled.section`
-  max-width: 100%;
-  height: 80%vh;
-  margin: 0 auto;
-  border-width: 0;
-  margin-top: 14em;
-  margin-bottom: 16em;
   width: 100%;
-  padding: 5px;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  padding-top: 10em;
+  padding-bottom: 16em;
+  margin: 0;
   display: block;
   justify-content: center;
   text-align: center;
+  background-color: var(--text-color-primary);
 
   p {
       font-size: 1.2rem;
       font-family: 'NexaBold';
+      color: var(--bg-color-primary);
    }
+  
+  h2 {
+    color: var(--bg-color-primary);
+  }
    @media (max-width: 1080px) {
      display: flex;
      flex-direction: column;
      justify-content: center;
      text-align: center;
+     height: 600px;
+     max-height: 60vh;
      padding: 2px;
 
 
@@ -59,6 +67,7 @@ const IntroContainer = styled.section`
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    max-height: 80vh;
     h2 {
        font-size: 2em;
      }
