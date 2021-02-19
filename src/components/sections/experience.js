@@ -4,7 +4,7 @@ import styled from 'styled-components'
 function Experience({experience}) {
   return (
     <StyledExperienceContainer>
-      <h1 className="anchor" id={'experience'}></h1>
+      <h1 className="anchor" id={'experience'}>.</h1>
       <Line><h1><span>My journey so far</span></h1></Line>
     <div>
       <h1>Experience Section</h1>

@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
     }
   `)
   
-  return (
+  return (data) (
     <>
       <Nav />
       <ContentWrapper>

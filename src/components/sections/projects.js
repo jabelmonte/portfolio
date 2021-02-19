@@ -49,7 +49,7 @@ const Projects = ({projects}) => {
 
   return (
     <StyledProjectContainer>
-      <h1 className="anchor" id={'projects'}></h1>
+      <h1 className="anchor" id={'projects'}>.</h1>
     <Line><h1><span>Stuff I built</span></h1></Line>
     <ProjectWrapper>{getProjects(data)}
     </ProjectWrapper>

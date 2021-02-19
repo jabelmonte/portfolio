@@ -1,11 +1,11 @@
 import React from "react"
 import styled from "styled-components"
-import { dummy, email } from "../links"
+import { email } from "../links"
 
 function Contact({contact}) {
   return (
     <StyledContactContainer>
-        <h1 className="anchor" id={'contact'}></h1>
+        <h1 className="anchor" id={'contact'}>.</h1>
         <Line><h1><span>Hit me up!</span></h1></Line>
         <StyledContactText>
           <p>I'm currently 

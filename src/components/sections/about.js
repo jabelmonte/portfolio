@@ -4,9 +4,9 @@ import Styled from "styled-components"
 function About({about}) {
   return (
     <StyledAboutContainer>
+      <h1 className="anchor" id={'about'}>.</h1>
       <Line><h1><span>Nice to meet you</span></h1></Line>
       <StyledAboutTextBox>
-      <h1 className="anchor" id={'about'}></h1>
       <p className="descriptiveText">
         I'm currently looking for a job here in the city, whether it be on the
         web or the funky enterprise, I'll check any opportunity that comes by.
@@ -34,12 +34,6 @@ const StyledAboutTextBox = Styled.div`
     order: 1;
     max-width: 50%;
     padding: 10px;
-`
-
-const StyledAboutTextImage = Styled.div`
-    order:2;
-    max-width: 50%;
-    width: 100%;
 `
 const Line = Styled.h1`
   h1{
