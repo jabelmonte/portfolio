@@ -164,7 +164,6 @@ const MenuLinks = styled.nav`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     height: 100vh;
     width: 100%;
     background: var(--bg-color-secondary);
