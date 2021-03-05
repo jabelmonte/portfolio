@@ -47,27 +47,20 @@ const IntroContainer = styled.section`
    @media (max-width: 1080px) {
      display: flex;
      flex-direction: column;
-     justify-content: center;
-     text-align: center;
      height: 600px;
      max-height: 60vh;
      padding: 2px;
-
-
-     h2 {
+    h2 {
        font-size: 3em;
-     }
+    }
     h3 {
       font-size: 3rem;
-    }
-
+     }
    }
    @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    max-height: 80vh;
+    max-height: 90vh;
     h2 {
        font-size: 2em;
      }
@@ -78,29 +71,19 @@ const IntroContainer = styled.section`
       font-size: 1rem;
     }
    }
-
-   @media (max-width: 568px) {
-    display: grid;
-    grid-grid-template-columns: repeat(auto-fit, max-width);
-    gap: 20px;
-    margin-top: 10em;
-    justify-content: center;
-    text-align: center;
-    h2 {
-       font-size: 1.5em;
-     }
-    h3 {
-      font-size: 1.5rem;
-    }
-    p {
-      padding: 15px;
-      font-size: 0.8rem;
-    }
-   }
 `
 const IntroHeadings = styled.div`
   margin: 0 auto;
   padding: 0;
+  @media (max-width: 768px) {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: var(--fs-md);
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
 `
 const IntroTexts = styled.div`
   margin: 0 auto;

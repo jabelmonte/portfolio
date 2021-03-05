@@ -6,15 +6,15 @@ function About({about}) {
     <StyledAboutContainer>
       <h1 className="anchor" id={'about'}>.</h1>
       <Line><h1><span>Nice to meet you</span></h1></Line>
-      <StyledAboutTextBox>
-      <p className="descriptiveText">
+      <AboutContent>
+      <p>
         This website of mine is still an ongoing project.
       </p>
       <br></br>
-      <p className="descriptiveText">
+      <p>
         Thanks for being interested.
       </p>
-      </StyledAboutTextBox>
+      </AboutContent>
     </StyledAboutContainer>
   )
 }
@@ -25,14 +25,17 @@ const StyledAboutContainer = Styled.section`
     margin: 0 auto;
     border-width: 0;
     margin-bottom: 10em;
+    text-align: center;
     justify-content: center;
     padding: 5px;
     font-family: 'NexaLight';
 `
-const StyledAboutTextBox = Styled.div`
-    order: 1;
-    max-width: 50%;
-    padding: 10px;
+const AboutContent = Styled.div`
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
 `
 const Line = Styled.h1`
   h1{

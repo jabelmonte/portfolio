@@ -115,6 +115,7 @@ const StyledNav = styled.nav`
   width: 100%;
   height: 5em;
   background-color: var(--bg-color-secondary);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   z-index: 1;
 `
 const StyledMenu = styled.button`

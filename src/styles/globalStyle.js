@@ -75,11 +75,6 @@ export const GlobalStyle = createGlobalStyle`
       font-style: 'NexaBold';
       color: var(--text-color-primary);
    }
-
-   .descriptiveText {
-      font-size: 1.2rem;
-      font-family: 'NexaLight';
-   }
    //resume and mailto buttons
    .button {
       height: 3em;

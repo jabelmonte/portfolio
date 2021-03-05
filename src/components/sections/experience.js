@@ -6,9 +6,11 @@ function Experience({experience}) {
     <StyledExperienceContainer>
       <h1 className="anchor" id={'experience'}>.</h1>
       <Line><h1><span>My journey so far</span></h1></Line>
-    <div>
-      <h1>:'^) this is so sad</h1>
-    </div>
+    <ExperienceContent>
+      <p classname="descriptiveText">
+        I will be landing my first job at Accenture
+      </p>
+    </ExperienceContent>
     </StyledExperienceContainer>
   )
 }
@@ -21,6 +23,14 @@ const StyledExperienceContainer = styled.section`
   padding: 5px;
   margin-bottom: 12em;
   font-family: 'NexaLight';
+`
+const ExperienceContent = styled.div`
+  display: flexbox;
+  text-align: center;
+  justify-content: center;
+  padding: 4px;
+  margin-left: 10%;
+  margin-right: 10%;
 `
 const Line = styled.h1`
   h1{
